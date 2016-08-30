@@ -8,10 +8,17 @@
     "babel-polyfill": "*",
     "babel-preset-es2015": "*",
     "babel-preset-react": "*",
+    "babel-preset-stage-2": "^6.13.0",
     "jest-cli": "*",
     "react-addons-test-utils": "~0.14.0"
   },
   "scripts": {
     "test": "jest"
+  },
+  "jest": {
+    "unmockedModulePathPatterns": [
+      "react"
+    ],
+    "testRegex": ".*\\.test\\.js"
   }
 }
